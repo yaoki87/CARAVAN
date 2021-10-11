@@ -33,33 +33,28 @@
 </div>
 
 <main>
-  <section class="single-blog">
+    <section class="single-blog">
     <h2 class="blog-heading">Blog</h2>
     <section class="blog-box">
       <h3 class="blog-box-heading">
-        <!-- title部分 下で変更します -->
-      　　<%= @blog.title %>
-        <!-- title部分 ここまで -->
+        <%= @blog.title %>     
       </h3>
       <div class="blog-box-content">
         <p class="category">
-          <!-- category部分 下で変更します -->
-          <%= @blog.category %>
-          <!-- category部分 ここまで -->
+          <%= @blog.category %>  
+          
         </p>
         <p class="blog-date">
-          <!-- created_at部分 下で変更します -->
-          <%= @blog.created_at %>
-          <!-- created_at部分 ここまで -->
+          <%= @blog.created_at %> 
+          
         </p>
       </div>
       <%= image_tag "img/forest.jpg", class:"single-image" %>
       <p class="single-text">
-        <!-- body部分 下で変更します -->
-        <%= @blog.body %>
-        <!-- body部分 ここまで -->
+        <%= @blog.body %>    
+        
       </p>
-      <a href="#">編集</a>
+      <%= link_to "編集", edit_blog_path(@blog) %>
       <a href="#">削除</a>
       <div class="author-case">
         <div class="author-image"></div>
